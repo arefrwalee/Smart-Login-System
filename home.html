@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home page for Smart Login System after successful login"
+    />
+    <meta
+      name="keywords"
+      content="home, dashboard, smart login system, user authentication"
+    />
+    <title>Home</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon" />
+
+    <!-- fortawesome styles -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- home styles -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="home-container">
+      <div class="lottie-animation">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          src="https://lottie.host/b2d90112-4e8e-4996-9863-5b3d9bd3240a/N2XzyPM17N.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+      <div class="home-content">
+        <p id="userWelcome">You are Welcome :)</p>
+        <a class="btn btn-dark btn-lg" id="logout">Log Out </a>
+      </div>
+    </div>
+    <!-- main script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sign up page for Smart Login System" />
+    <meta name="keywords" content="signup, registration, smart login system" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon" />
+    <!-- fortawesome styles -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100"
+  >
+    <div class="card shadow-lg w-75" style="max-width: 480px">
+      <div class="card-body">
+        <div class="text-center">
+          <h1 class="card-title h2 my-5">Smart Login System</h1>
+        </div>
+        <div class="mt-4">
+          <form id="signupForm">
+            <div class="mb-4">
+              <label for="username" class="form-label text-muted"
+                >User name</label
+              >
+              <input
+                type="text"
+                class="form-control selected-input"
+                id="usernameSignup"
+                placeholder="Enter Your Name"
+                required
+              />
+              <div class="alert alert-danger mt-2 d-none" id="nameAlert">
+                Please enter only letters (A–Z), between 3 and 12 characters
+                long.
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label text-muted"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control selected-input"
+                id="emailSignup"
+                placeholder="Enter Your Email"
+                required
+              />
+              <div class="alert alert-danger d-none mt-2" id="emailAlert">
+                Please enter a valid email address (e.g., example@domain.com).
+              </div>
+              <div class="alert alert-danger d-none mt-2" id="emailExistAlert">
+                Email is already exist ..
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label text-muted"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control selected-input"
+                id="passwordSignup"
+                placeholder="Enter Your Password"
+                required
+              />
+
+              <div class="alert alert-danger mt-2 d-none" id="passwordAlert">
+                Password must be at least 8 characters long and include at least
+                one uppercase letter, one lowercase letter, and one number.
+              </div>
+              <div class="alert alert-success mt-2 d-none" id="succeedAlert">
+                You're all set! Thanks for signing up.
+              </div>
+            </div>
+            <div class="d-grid">
+              <button id="signUpBtn" class="btn btn-dark signUpBtn btn-lg">
+                Sign up
+              </button>
+            </div>
+            <p class="text-center text-muted mt-4">
+              You have an account?
+              <a href="index.html" class="text-decoration-none">Sign in.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- main  js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

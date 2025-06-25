@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login page for Smart Login System" />
+    <meta name="keywords" content="login, authentication, smart login system" />
+    <title>Log in</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon" />
+
+    <!-- fortawesome styles -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100"
+  >
+    <div class="card shadow-lg w-75" style="max-width: 480px">
+      <div class="card-body">
+        <div class="text-center">
+          <h1 class="card-title h2 my-5">Smart Login System</h1>
+        </div>
+        <div class="mt-4">
+          <form id="login">
+            <div class="mb-4">
+              <label for="email" class="form-label text-muted"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="emailSignin"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label text-muted"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="passwordSignin"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+
+            <p class="alert alert-danger d-none" id="invalid">
+              Invalid email or password
+            </p>
+            <div class="d-grid">
+              <button
+                id="signInBtn"
+                type="submit"
+                class="signInBtn btn btn-dark btn-lg"
+              >
+                Sign in
+              </button>
+            </div>
+            <p class="text-center text-muted mt-4">
+              Don't have an account yet?
+              <a href="singup.html" class="text-decoration-none">Sign up</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
